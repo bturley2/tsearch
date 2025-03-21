@@ -1,0 +1,13 @@
+services:
+
+  server:
+    # location to find dockerfile
+    build: ./tsearch/
+    ports:
+      # exposes [localhostPort]:[containerPort]
+      - "8000:5000"
+
+  db:
+    image: "postgres"
+    environment:
+      POSTGRES_PASSWORD: password
