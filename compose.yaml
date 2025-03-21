@@ -5,7 +5,7 @@ services:
     build: ./tsearch/
     ports:
       # exposes [localhostPort]:[containerPort]
-      - "8000:5000"
+      - "8000:9999"
 
   db:
     image: "postgres"
