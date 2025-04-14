@@ -1,0 +1,8 @@
+[package]
+name = "db"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+postgres = "0.19.10"
+dotenvy = "0.15.7"

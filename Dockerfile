@@ -1,7 +1,7 @@
 # build the application
 FROM rust:1.84 as builder
 WORKDIR /usr/src/tsearch
-COPY . .
+COPY tsearch .
 
 RUN cargo install --path .
 
