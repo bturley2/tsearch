@@ -1,6 +1,10 @@
+use tokio::main;
 use db;
 
-fn main() {
-    db::init_db();
-    let conn = db::connect_to_db();
+#[main]
+async fn main() {
+    db::init().await;
+    // let conn = db::connect_to_db();
+
+    // TODO: fill out the database with information
 }
