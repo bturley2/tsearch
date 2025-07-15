@@ -6,3 +6,4 @@ edition = "2024"
 [dependencies]
 postgres = "0.19.10"
 dotenvy = "0.15.7"
+bollard = "0.19.1"

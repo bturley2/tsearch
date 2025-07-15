@@ -259,6 +259,7 @@ dependencies = [
 name = "db"
 version = "0.1.0"
 dependencies = [
+ "bollard",
  "dotenvy",
  "postgres",
 ]
@@ -1097,6 +1098,7 @@ version = "0.1.0"
 dependencies = [
  "db",
  "postgres",
+ "tokio",
 ]
 
 [[package]]
@@ -1188,7 +1190,6 @@ name = "server"
 version = "0.1.0"
 dependencies = [
  "axum",
- "bollard",
  "db",
  "postgres",
  "tokio",
