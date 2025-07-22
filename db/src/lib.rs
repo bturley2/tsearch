@@ -68,7 +68,7 @@ pub fn connect_to_db() -> Client {
         .host("localhost")
         .port(9999);
 
-    return db_config.connect(postgres::NoTls).expect("failed to connect to db");
+    return db_config.connect(postgres::NoTls).expect("ERROR: failed to connect to db");
 }
 
 fn get_db_password() -> String {
